@@ -1,10 +1,13 @@
+#import "vpnswitch.h"
 #import <dlfcn.h>
 #import <objc/runtime.h>
 #import <substrate.h>
-#import "vpnswitch.h"
+
+
 @interface VPNBundleController : NSObject
 -(id)initWithParentListController:(id)arg1 properties:(id)arg2 ;
 @end
+
 
 @implementation vpnswitch
 
@@ -33,14 +36,13 @@
 
   if(_selected)
   {
-		[self connectVPN];
+    [self connectVPN];
   }
   else
   {
     [self disconnectVPN];
   }
 }
-
 - (void)connectVPN{
 	NSBundle *VPNPreferences = [NSBundle bundleWithPath:@"/System/Library/PreferenceBundles/VPNPreferences.bundle"];
 	if([VPNPreferences load]==YES){
@@ -76,5 +78,4 @@
 	}
 	}
 }
-
 @end

@@ -1,9 +1,9 @@
 Package: com.nactro.vpnswitch
-Name: VPNSwitch
-Depends: mobilesubstrate
-Version: 1.0
+Name: VPN 快捷开关
+Depends: mobilesubstrate,com.opa334.ccsupport
+Version: 1.0.1
 Architecture: iphoneos-arm
-Description: iOS 12 上的控制中心切换 VPN 开关
-Maintainer: Nactro
-Author: Nactro
+Description: VPN快捷开关
+Maintainer: Nacro
+Author: Nacro
 Section: Control Center (Modules)

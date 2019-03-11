@@ -6,7 +6,7 @@ export ARCHS = arm64
 
 BUNDLE_NAME = vpnswitch
 vpnswitch_BUNDLE_EXTENSION = bundle
-vpnswitch_FILES = vpnswitch.m 
+vpnswitch_FILES = vpnswitch.m
 vpnswitch_PRIVATE_FRAMEWORKS = ControlCenterUIKit
 vpnswitch_INSTALL_PATH = /Library/ControlCenter/Bundles/
 
